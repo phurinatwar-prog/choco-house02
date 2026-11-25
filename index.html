@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CHOCO HOUSE ช็อกโกแลตแท่ง รสชาติเข้มข้น ส่งความสุขถึงบ้าน">
+  <title>CHOCO HOUSE | Chocolate made happy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">ส่งฟรีเมื่อสั่งซื้อครบ 499 บาท · อร่อยง่าย ๆ ส่งตรงถึงบ้าน</div>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">C</span><span>CHOCO <b>HOUSE</b><small>CHOCOLATE MADE HAPPY</small></span></a>
+    <nav><a href="#products">สินค้า</a><a href="#story">เกี่ยวกับเรา</a><a href="#how">วิธีสั่งซื้อ</a></nav>
+    <button class="cart-button" id="cartToggle" aria-label="เปิดตะกร้า">ตะกร้า <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A LITTLE JOY IN EVERY BITE</p>
+        <h1>ความสุขชิ้นเล็ก<br><em>ที่ละลายในใจ</em></h1>
+        <p class="hero-desc">เติมช่วงเวลาธรรมดาให้พิเศษขึ้นด้วยช็อกโกแลตแท่งคุณภาพ คัดสรรรสชาติที่อยากให้คุณตกหลุมรัก</p>
+        <a class="primary-link" href="#products">เลือกช็อกโกแลต <span>↗</span></a>
+        <div class="hero-note"><span>✦</span> Crafted with love · Made for sharing</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-circle"></div>
+        <img src="images/hero-chocolate.svg" alt="ช็อกโกแลตแท่ง CHOCO HOUSE">
+        <span class="floating-tag">HAPPINESS<br>INSIDE</span>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><span>✳</span><b>คัดสรรวัตถุดิบ</b><small>ใส่ใจในทุกรายละเอียด</small></div>
+      <div><span>♡</span><b>อร่อยทุกช่วงเวลา</b><small>ของขวัญให้ตัวเองและคนพิเศษ</small></div>
+      <div><span>⌂</span><b>จัดส่งถึงบ้าน</b><small>แพ็กสินค้าอย่างตั้งใจ</small></div>
+    </section>
+
+    <section class="products section" id="products">
+      <div class="section-heading"><div><p class="eyebrow">OUR CHOCOLATE</p><h2>เลือกความอร่อยของคุณ</h2></div><p>สองรสชาติพิเศษที่พร้อมเติมความสุขให้ทุกวัน</p></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="story-art"><div class="story-stamp">CHOCO<br>HOUSE<br>EST. 2026</div><div class="story-block"></div></div>
+      <div class="story-copy"><p class="eyebrow">OUR LITTLE STORY</p><h2>เพราะเราเชื่อว่า<br><em>ความสุขแบ่งปันได้</em></h2><p>CHOCO HOUSE ตั้งใจส่งต่อความสุขผ่านช็อกโกแลตแท่งที่เลือกสรรมาอย่างดี ไม่ว่าจะเป็นช่วงพักระหว่างวัน ของฝาก หรือรางวัลเล็ก ๆ ให้ตัวเอง เราอยากเป็นส่วนหนึ่งของช่วงเวลาดี ๆ ของคุณ</p><a href="#products" class="text-link">ค้นพบรสชาติที่ใช่ ↗</a></div>
+    </section>
+
+    <section class="how section" id="how"><p class="eyebrow">SIMPLE & EASY</p><h2>สั่งง่ายใน 3 ขั้นตอน</h2><div class="steps"><div><b>01</b><h3>เลือกสินค้า</h3><p>เลือกรสชาติและจำนวนที่ต้องการ</p></div><div><b>02</b><h3>กรอกข้อมูลจัดส่ง</h3><p>ระบุชื่อ ที่อยู่ และเบอร์โทรศัพท์</p></div><div><b>03</b><h3>รอรับความสุข</h3><p>ร้านตรวจสอบและเตรียมจัดส่ง</p></div></div></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">C</span><span>CHOCO <b>HOUSE</b><small>CHOCOLATE MADE HAPPY</small></span></a><p>© 2026 CHOCO HOUSE · Made with love</p></footer>
+
+  <div class="drawer-backdrop" id="backdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="ตะกร้าสินค้า">
+    <div class="drawer-head"><h2>ตะกร้าของคุณ</h2><button id="closeCart" class="icon-button">✕</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty">ยังไม่มีสินค้าในตะกร้า</p></div>
+    <div class="cart-total"><span>ยอดรวม</span><b id="cartTotal">฿0</b></div>
+    <button class="primary-button full" id="checkoutButton">ดำเนินการสั่งซื้อ</button>
+  </aside>
+
+  <div class="modal-backdrop" id="checkoutModal">
+    <form class="checkout-modal" id="checkoutForm">
+      <div class="drawer-head"><div><p class="eyebrow">CHECKOUT</p><h2>ข้อมูลสำหรับจัดส่ง</h2></div><button type="button" class="icon-button" id="closeCheckout">✕</button></div>
+      <label>ชื่อ-นามสกุล<input name="customerName" required maxlength="100" placeholder="ชื่อผู้รับพัสดุ"></label>
+      <label>เบอร์โทรศัพท์<input name="phone" required inputmode="tel" pattern="[0-9+() -]{9,20}" placeholder="08X-XXX-XXXX"></label>
+      <label>ที่อยู่จัดส่ง<textarea name="address" required maxlength="500" rows="3" placeholder="บ้านเลขที่ ถนน แขวง/ตำบล เขต/อำเภอ จังหวัด รหัสไปรษณีย์"></textarea></label>
+      <label>หมายเหตุ (ถ้ามี)<input name="note" maxlength="200" placeholder="เช่น ฝากไว้หน้าบ้าน"></label>
+      <div class="checkout-summary"><span>ยอดชำระสินค้า</span><b id="checkoutTotal">฿0</b></div>
+      <p class="small-note">* ตัวอย่างระบบสำหรับงานเรียน การชำระเงินและขนส่งยังต้องยืนยันกับผู้ให้บริการจริง</p>
+      <button class="primary-button full" type="submit" id="placeOrder">ยืนยันคำสั่งซื้อ</button>
+      <p id="checkoutMessage" class="form-message" role="status"></p>
+    </form>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
